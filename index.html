@@ -1,0 +1,93 @@
+<!--
+    Here is a starting point for the project.
+    jQuery and a index.js file have been included for you.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>50 State Game </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+  <audio id="player" autoplay loop>
+       <source src="coolSong.mp3" type="audio/mp3">
+  </audio>
+
+<p id>
+
+
+<div id="score_box">
+    <h2>Score</h2>
+    <div id="score">
+        <h2>0/0</h2>
+    </div>
+</div>
+
+<div id="cd_circle">60</div>
+<div id="spanish_box">
+    <div id="spanish_speakers"><h2>0</h2></div>
+    <h3 id="spanish_speakers_captions">Spanish Speakers</h3>
+</div>
+
+
+<div id="intro_txt"><h2>Welcome to 50 States game!</h2></div>
+
+
+<div id="article-container"></div>
+
+<div id="start_reset">
+        <button id="start_button" class = "button">Start!</button>
+        <button id="reset" class = "button">Reset</button>
+</div>
+<input id="state_field" type="text" placeholder="state">
+
+<div id="time_buttons">
+        <input id="seconds" type="number" placeholder="20">
+        <button id="set_timer" class = "button">Set Time</button>
+</div>
+<div id= "states_Pic">
+    <img src="blank.gif" width="150px">
+</div>
+
+    <!--
+    1. Implement the input element.
+        You'll need to answer the the following questions (and probably more):
+        1. What HTML tag inserts an input element?
+        2. How do I continuously check the contents of the input element without
+        the user hitting enter?
+        3. How do I disable the input bar if the game is not in session?
+    -->
+
+    <!--
+    2. Implement the running list of states.
+        1. What HTML will be inserted each time a user enters a correct state?
+        2. How can I make sure the user can see all the states he/she has
+        already entered?
+        3. How will I trigger the network request to get the number of Spanish
+        speakers in a state (on hover)?
+        4. How will I seperate the entered states from missed states when the
+        game is over if the user lost the game?
+    -->
+
+    <!--
+    3. Implement the timer. This is almost all JavaScript.
+    -->
+
+    <!--
+    4. Implement the start button. The start button must activate the input box
+    to allow input start the timer.
+    -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
