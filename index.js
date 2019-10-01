@@ -252,35 +252,8 @@ function game_win() {
   }
   return bool1;
 
-  for(var i in keys) {
-        if(correct.includes(keys[i].toLowerCase()) == false) {
-            return false;
-        }
-    }
-    return true;
-
+ 
 }
 function commas(str) {
   return str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
-
-
-
-
-
-
-/*
- * The majority of this project is done in JavaScript.
- *
- * 1. Start the timer when the click button is hit. Also, you must worry about
- *    how it will decrement (hint: setInterval).
- * 2. Check the input text with the group of states that has not already been
- *    entered. Note that this should only work if the game is currently in
- * 3. Realize when the user has entered all of the states, and let him/her know
- *    that he/she has won (also must handle the lose scenario). The timer must
- *    be stopped as well.
- *
- * There may be other tasks that must be completed, and everyone's implementation
- * will be different. Make sure you Google! We urge you to post in Piazza if
- * you are stuck.
- */
